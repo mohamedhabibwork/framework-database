@@ -1,0 +1,31 @@
+{
+  "name": "@framework/database",
+  "version": "0.2.0",
+  "description": "PostgreSQL connection, transactions, Drizzle CRUD mixins, audit trail, pagination, and migrations.",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "homepage": "https://github.com/mohamedhabibwork/framework-database#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedhabibwork/framework.git",
+    "directory": "packages/database"
+  },
+  "bugs": {
+    "url": "https://github.com/mohamedhabibwork/framework/issues"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@framework/core": "workspace:*",
+    "@framework/http": "workspace:*",
+    "drizzle-orm": "0.45.4",
+    "drizzle-zod": "0.8.3",
+    "postgres": "3.4.9",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@framework/testing": "workspace:*"
+  }
+}
