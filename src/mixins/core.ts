@@ -150,7 +150,7 @@ export class RepositoryCore<TTable extends CrudTable> {
 }
 
 // TypeScript's mixin pattern requires a constructor accepting any arguments.
-// biome-ignore lint/suspicious/noExplicitAny: required mixin constructor signature
+// oxlint-disable-next-line typescript/no-explicit-any -- required mixin constructor signature
 export type RepositoryConstructor = abstract new (...args: any[]) => RepositoryCore<CrudTable>;
 
 export type TableOf<TBase extends RepositoryConstructor> = InstanceType<TBase>['table'];
